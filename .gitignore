@@ -1,0 +1,5 @@
+
+# Typescript v1 declaration files
+dist/
+node_modules/
+

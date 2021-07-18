@@ -1,0 +1,20 @@
+{
+  "name": "rollup-esbuild-await-this-bug",
+  "version": "1.0.0",
+  "description": "A repo which demonstrates a very minor bug in rollup-plugin-esbuild async/await code generation",
+  "main": "dist/main.cjs",
+  "module": "dist/main.mjs",
+  "files": ["src"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "esbuildOnly": "esbuild --bundle --platform=node --format=esm src/index.ts",
+    "build": "rollup -c rollup.config.js"
+  },
+  "author": "Joe Ally",
+  "devDependencies": {
+    "esbuild": "^0.12.15",
+    "rollup": "^2.53.2",
+    "rollup-plugin-esbuild": "^4.5.0",
+    "typescript": "^4.3.5"
+  }
+}
